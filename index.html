@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>KTA ONLINE - GAPENSI</title>
+    <link href="../assets/img/favicon-32x32.png" rel="icon">
+    <link href="../assets/img/apple-icon-180x180.png" rel="apple-touch-icon">
+    <link rel="stylesheet" href="https://anggota.gapensi.or.id/dist/plugins/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="https://anggota.gapensi.or.id/dist/css/style.css">
+    <script src="https://anggota.gapensi.or.id/dist/plugins/jquery/jquery.min.js"></script>
+    <script
+        src="https://anggota.gapensi.or.id/dist/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+</head>
+
+<body>
+    <div class="h-100 d-flex align-items-center justify-content-center">
+        <form role="form" method="get" action="./qr.html" autocomplete="on">
+            <input type="hidden" name="_token" value="mAvTKEUeKLVAzO2W0M6O8abgsgNR8CNJiMmlQ2nJ">
+            <div class="container-fluid">
+                <div class="card card-info">
+                    <div class="card-body">
+                        <section>
+                            <h5 class="mb-0">Masukan Tanggal KTA</h5>
+                            <hr>
+                            <div class="row">
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <p><small class="alert-confirm"></small></p>
+                                    <div class="form-group row text-center">
+                                        <div class="col-sm-12">
+                                            <div class="input-group date" id="tgl_kta" data-target-input="nearest">
+                                                <input type="text" class="form-control datetimepicker-input"
+                                                    name="tgl_kta" data-target="#tgl_kta" placeholder="yyyy-mm-dd"
+                                                    required />
+                                                <div class="input-group-append" data-target="#tgl_kta"
+                                                    data-toggle="datetimepicker">
+                                                    <div class="input-group-text"><i class="far fa-calendar-alt"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <input type="hidden" value="dc081e4d-a9d0-4a05-86e3-80e9da30ab02"
+                                                name="qr_code">
+                                            <button type="submit" class="btn btn-primary mt-1"><i
+                                                    class="fas fa-paper-plane"></i> Submit</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        $('#tgl_kta').datetimepicker({
+            format: 'YYYY-MM-DD'
+        });
+    </script>
+</body>
+
+</html>
